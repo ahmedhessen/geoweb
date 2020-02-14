@@ -25,7 +25,7 @@
                 'pk.eyJ1IjoiYWhtZWRoZXNzZW4iLCJhIjoiY2s0OHRicG1zMDVldzNucGI5aWIzeWZuOCJ9.ZY7nyOKXdfong8IeGtZoog';
             var map = new mapboxgl.Map({
                 container: 'map',
-                style: 'mapbox://styles/ahmedhessen/ck6lgxjqp00j61ip956fj8wp7',
+                style: 'mapbox://styles/ahmedhessen/ck6ltcr1o0j1a1iqu9x07gnlw',
                 center: [2.8359513,41.972346],
                 zoom: 17,
                 attributionControl: false
@@ -39,16 +39,16 @@
             map.on('load', function () {
                 map.addSource("geojson", {
                     type: "vector",
-                    url: "ahmedhessen.3eqzqbji" //poner mapbox://vuestro id
+                    url: "ahmedhessen.283rfpjq" //poner mapbox://vuestro id
                 }); //fin map source
 
                 map.addLayer({
-                    id: "ahmedhessen.3eqzqbji",
+                    id: "ahmedhessen.283rfpjq",
                     type: "Fill extrusion",
-                    source: "viasciclables_source",
+                    source: "constru_cementerio-9apq9x",
                     'source-layer': "cementerio de Girona", //poner vuestro titulo capa
                     paint:{
-                        'line-color':"#00ff00",
+                        'line-color':"#2cf2a6",
                         "line-width":3
                     }
                 });
